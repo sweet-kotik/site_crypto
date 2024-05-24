@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poetsen+One&display=swap');
+* {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.mainHeader{
+    margin-top: 25px;
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    font-size: larger;
+    text-shadow: 1px 1px 2px #000000;
+}
+h3 {
+    text-align: center;
+}
+.justify-content-md-center,
+.justify-content-md-center a{
+    margin-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.content-text {
+    text-indent: 50px;
+}
+.content-text-h {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 700;
+    font-size: large;
+}
