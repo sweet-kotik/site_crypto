@@ -13,7 +13,7 @@ class NavbarSite extends React.Component {
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to="/">Главная</Nav.Link>
                             <Nav.Link as={Link} to="/sync">Синхронные</Nav.Link>
-                            <Nav.Link as={Link} to="#">Асинхронные</Nav.Link>
+                            <Nav.Link as={Link} to="/async">Асинхронные</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

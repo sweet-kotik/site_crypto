@@ -62,7 +62,7 @@ class Main extends React.Component {
                 </Row>
                 <Row className="justify-content-md-center">
                     <Col>
-                        <Button as={Link} to="#" variant="primary">Попробовать сейчас</Button>
+                        <Button as={Link} to="/async" variant="primary">Попробовать сейчас</Button>
                     </Col>
                     <Col>
                         <Button as={Link} to="/sync" variant="primary">Попробовать сейчас</Button>

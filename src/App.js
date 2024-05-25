@@ -2,6 +2,7 @@ import React from "react"
 import NavbarSite from "./components/Navbar";
 import Main from "./components/Main";
 import Sync from "./components/Sync"
+import Async from "./components/Async";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 class App extends React.Component {
@@ -19,6 +20,7 @@ class App extends React.Component {
                         <Routes>
                             <Route path="/" element={<Main />} />
                             <Route path="/sync" element={<Sync />} />
+                            <Route path="/async" element={<Async />} />
                         </Routes>
                     </main>
             </Router>
