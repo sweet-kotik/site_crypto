@@ -7,10 +7,9 @@ class GoldwasserMicali {
   }
 
   generateKeys() {
-    this.p = this.generatePrime(this.bitLength / 2);
-    this.q = this.generatePrime(this.bitLength / 2);
+    this.p = bigInt(67458655117290006585062267020203445094239837645620506977264604450089774418723n);
+    this.q = bigInt(75285705057698278676543813191183044751724952854431335109585251335656652137327n);
     this.n = this.p.multiply(this.q);
-
     do {
       this.y = bigInt.randBetween(2, this.n.minus(1));
     } while (this.jacobiSymbol(this.y, this.n) !== -1);
@@ -59,7 +58,6 @@ class GoldwasserMicali {
   stringToBits(string) {
     return string.split('').reduce((acc, char) => {
       const bits = char.charCodeAt(0).toString(2).padStart(8, '0').split('').map(Number);
-      console.log(bits)
       return acc.concat(bits);
     }, []);
   }
@@ -69,8 +67,6 @@ class GoldwasserMicali {
     const xq = c.modPow(this.q.add(1).divide(4), this.q);
     const x = this.crt(xp, xq, this.p, this.q);
     const result = x.modPow(2, this.n).equals(c) ? 0 : 1;
-    console.log(`somethiing result: ${x.modPow(2, this.n)}\nc: ${c}`)
-    console.log(`bit result: ${result}`);
     return result;
   }
 
@@ -78,7 +74,6 @@ class GoldwasserMicali {
     const cp = q.multiply(q.modInv(p));
     const cq = p.multiply(p.modInv(q));
     const result = xp.multiply(cp).add(xq.multiply(cq)).mod(p.multiply(q));
-    console.log(`CRT result: ${result}`)
     return result;
   }
 
@@ -91,11 +86,8 @@ class GoldwasserMicali {
     let bytes = [];
     for (let i = 0; i < bits.length; i += 8) {
       let byte = bits.slice(i, i + 8).join('');
-      console.log(i)
-      console.log(byte)
       bytes.push(parseInt(byte, 2));
     }
-    console.log(bytes)
     return String.fromCharCode(...bytes);
   }
 }
