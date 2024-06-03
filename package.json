@@ -1,7 +1,7 @@
 {
   "name": "site",
   "version": "0.1.0",
-  "homepage": "https://sweet-kotik.github.io/build-site",
+  "homepage": "https://sweet-kotik.github.io/site_crypto",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^6.4.5",
