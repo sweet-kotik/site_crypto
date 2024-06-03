@@ -3,6 +3,8 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import Async_RSA from "./Async-RSA";
 import Async_ECC from "./Async-ECC";
+import Async_NTRU from "./Async-NTRU";
+import Async_pal from "./Async-Paillier";
 
 class Async extends React.Component {
     render() {
@@ -20,10 +22,10 @@ class Async extends React.Component {
                     <Async_ECC />
                 </Tab>
                 <Tab eventKey="NTRUEncrypt" title="NTRUEncrypt">
-
+                    <Async_NTRU />
                 </Tab>
                 <Tab eventKey="Paillier Cryptosystem" title="Paillier Cryptosystem">
-  
+                    <Async_pal />
                 </Tab>
                 <Tab eventKey="McElice Cryptosystem" title="McElice Cryptosystem">
 
