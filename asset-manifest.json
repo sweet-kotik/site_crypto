@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/build-site/static/css/main.3e5e35cb.css",
-    "main.js": "/build-site/static/js/main.9b2f173c.js",
-    "index.html": "/build-site/index.html",
-    "main.3e5e35cb.css.map": "/build-site/static/css/main.3e5e35cb.css.map",
-    "main.9b2f173c.js.map": "/build-site/static/js/main.9b2f173c.js.map"
+    "main.css": "/site_crypto/static/css/main.3e5e35cb.css",
+    "main.js": "/site_crypto/static/js/main.9b2f173c.js",
+    "index.html": "/site_crypto/index.html",
+    "main.3e5e35cb.css.map": "/site_crypto/static/css/main.3e5e35cb.css.map",
+    "main.9b2f173c.js.map": "/site_crypto/static/js/main.9b2f173c.js.map"
   },
   "entrypoints": [
     "static/css/main.3e5e35cb.css",
