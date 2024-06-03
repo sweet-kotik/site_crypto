@@ -14,6 +14,8 @@ class NavbarSite extends React.Component {
                             <Nav.Link as={Link} to="/">Главная</Nav.Link>
                             <Nav.Link as={Link} to="/sync">Синхронные</Nav.Link>
                             <Nav.Link as={Link} to="/async">Асинхронные</Nav.Link>
+                            <Nav.Link as={Link} to="/hash">Хэширование</Nav.Link>
+                            <Nav.Link as={Link} to="/ecpdsa">ЭЦП</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
